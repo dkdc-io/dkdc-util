@@ -1,6 +1,6 @@
 [project]
 name = "dkdc-util"
-version = "0.0.1"
+version = "0.0.2"
 authors = [{ name = "Cody", email = "cody@dkdc.dev" }]
 description = "utility functions"
 readme = "readme.md"
@@ -10,7 +10,7 @@ classifiers = [
   "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
 ]
-dependencies = ['python-dotenv']
+dependencies = []
 
 [project.optional-dependencies]
 dev = ["ruff", "ipython", "jupyter", "nbclient", "ipykernel"]

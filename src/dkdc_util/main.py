@@ -26,7 +26,7 @@ def uuid_to_parts(uuid: str) -> (str, str):
     return (timestamp, random_part)
 
 
-def get_dkdc_dir():
+def get_dkdc_dir() -> str:
     import os
 
     dirpath = os.path.join(os.path.expanduser("~"), ".dkdc")
@@ -34,14 +34,3 @@ def get_dkdc_dir():
     os.makedirs(dirpath, exist_ok=True)
 
     return dirpath
-
-
-def load_env() -> None:
-    import os
-
-    from dotenv import load_dotenv
-
-    load_dotenv()
-    load_dotenv(os.path.join(os.getcwd(), ".env"))
-    load_dotenv(os.path.join(os.path.expanduser("~"), ".env"))
-    load_dotenv(os.path.join(get_dkdc_dir(), ".env"))
