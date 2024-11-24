@@ -34,3 +34,15 @@ def get_dkdc_dir() -> str:
     os.makedirs(dirpath, exist_ok=True)
 
     return dirpath
+
+
+def get_config_toml() -> dict:
+    import os
+    import tomllib
+
+    filepath = os.path.join(get_dkdc_dir(), "config.toml")
+
+    with open(filepath, "rb") as f:
+        config = tomllib.load(f)
+
+    return config

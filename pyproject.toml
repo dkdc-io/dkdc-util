@@ -1,6 +1,6 @@
 [project]
 name = "dkdc-util"
-version = "0.0.3"
+version = "0.0.4"
 authors = [{ name = "Cody", email = "cody@dkdc.dev" }]
 description = "utility functions"
 readme = "readme.md"
